@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
         }
     },
     "dependent_plugins": {}

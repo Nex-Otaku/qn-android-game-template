@@ -1,3 +1,6 @@
 // GENERATED FILE - DO NOT EDIT
 include ":"
 include ":CordovaLib"
+
+include ':QuestNavigatorLibrary'
+project(':QuestNavigatorLibrary').projectDir=new File('d:/dev/repos/quest-navigator-library-android-studio/QuestNavigatorLibrary')

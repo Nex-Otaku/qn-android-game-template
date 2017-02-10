@@ -1,5 +1,6 @@
-package org.sample.hybrid;
+package ru.butterfly_lantern.cordova;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
@@ -10,7 +11,7 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 
-public class HybridBridge extends CordovaPlugin {
+public class QspBridge extends CordovaPlugin {
  public ArrayList itemsList = new ArrayList();
  public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
    try {
@@ -36,7 +37,7 @@ public class HybridBridge extends CordovaPlugin {
  public void onActivityResult(int requestCode, int resultCode, Intent data) {
    // Handle a result here if one set in the Activity class started
    System.out.println("Activity Result: " + resultCode); //-1 is RESULT_OK
-   if (resultCode==Activity.RESULT_OK) {
+   if (resultCode== Activity.RESULT_OK) {
      System.out.println("All good!");
    }
  }

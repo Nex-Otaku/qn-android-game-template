@@ -27,4 +27,7 @@
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
+    <feature name="QspBridge">
+        <param name="android-package" value="ru.butterfly_lantern.cordova.QspBridge" />
+    </feature>
 </widget>

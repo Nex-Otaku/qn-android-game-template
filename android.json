@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"Toast\"><param name=\"android-package\" value=\"nl.xservices.plugins.Toast\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"QspBridge\"><param name=\"android-package\" value=\"ru.butterfly_lantern.cordova.QspBridge\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -33,6 +37,9 @@
             "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
         },
         "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
+        },
+        "cordova-plugin-qsp": {
             "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
         }
     },
@@ -58,11 +65,20 @@
             "id": "cordova-plugin-x-toast.tests",
             "file": "plugins/cordova-plugin-x-toast/test/tests.js",
             "pluginId": "cordova-plugin-x-toast"
+        },
+        {
+            "id": "cordova-plugin-qsp.QspBridge",
+            "file": "plugins/cordova-plugin-qsp/www/js/QspBridge.js",
+            "pluginId": "cordova-plugin-qsp",
+            "clobbers": [
+                "QspBridge"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.3.1",
         "cordova-plugin-device": "1.1.4",
-        "cordova-plugin-x-toast": "2.5.2"
+        "cordova-plugin-x-toast": "2.5.2",
+        "cordova-plugin-qsp": "1.0.0"
     }
 }

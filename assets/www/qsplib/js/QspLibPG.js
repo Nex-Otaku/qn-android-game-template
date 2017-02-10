@@ -12,69 +12,68 @@ var QspLib = {
     
     registerJsCallback: function(callbackFunction, callbackName)
     {
-        return cordova.exec(callbackFunction, null, "QspBridge", "registerJsCallback", [callbackName]);
+        return QspBridge.registerJsCallback(callbackFunction, callbackName);
     },
 
     initLib: function(onInited) {
-        return cordova.exec(onInited, null, "QspBridge", "initLib", []);
+        return QspBridge.initLib(onInited);
     },
     
     restartGame: function() {
-        return cordova.exec(null, null, "QspBridge", "restartGame", []);
+        return QspBridge.restartGame();
     },
     
     version: function(types, success, fail) {
-      return cordova.exec(success, fail, "QspBridge", "version", types);
+        return QspBridge.version(types, success, fail);
     },
     
     selectAction: function(index) {
-        return cordova.exec(null, null, "QspBridge", "selectAction", [index]);
+        return QspBridge.selectAction(index);
     },
 
     executeAction: function(index) {
-        return cordova.exec(null, null, "QspBridge", "executeAction", [index]);
+        return QspBridge.executeAction(index);
     },
     
     selectObject: function(index) {
-        return cordova.exec(null, null, "QspBridge", "selectObject", [index]);
+        return QspBridge.selectObject(index);
     },
     
     loadGame: function() {
-        return cordova.exec(null, null, "QspBridge", "loadGame", []);
+        return QspBridge.loadGame();
     },
     
     saveGame: function() {
-        return cordova.exec(null, null, "QspBridge", "saveGame", []);
+        return QspBridge.saveGame();
     },
     
     saveSlotSelected: function(index, open) {
-        var mode = open ? 1 : 0;
-        return cordova.exec(null, null, "QspBridge", "saveSlotSelected", [index, mode]);
+        return QspBridge.saveSlotSelected(index, open);
     },
 
     msgResult: function() {
-        return cordova.exec(null, null, "QspBridge", "msgResult", []);
+        return QspBridge.msgResult();
     },
     
     errorResult: function() {
-        return cordova.exec(null, null, "QspBridge", "errorResult", []);
+        return QspBridge.errorResult();
     },
     
     userMenuResult: function(index) {
-        return cordova.exec(null, null, "QspBridge", "userMenuResult", [index]);
+        return QspBridge.userMenuResult(index);
     },
     
     inputResult: function(text) {
-        return cordova.exec(null, null, "QspBridge", "inputResult", [text]);
+        return QspBridge.inputResult(text);
     },
 
     setMute: function(mute) {
-        return cordova.exec(null, null, "QspBridge", "setMute", [mute]);
+        return QspBridge.setMute(mute);
     },
 	
 	// Для того, чтобы приложение на Андроиде не закрывать по кнопке BACK, а отправлять в фоновый режим
 	moveTaskToBackground: function() {
-		return cordova.exec(null, null, "QspBridge", "moveTaskToBackground", []);
+        return QspBridge.moveTaskToBackground();
 	}
 };
 

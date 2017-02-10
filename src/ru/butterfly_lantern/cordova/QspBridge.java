@@ -11,7 +11,11 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 
-public class QspBridge extends CordovaPlugin {
+import su.qsp.QuestNavigator.library.QspLib;
+
+//public class QspBridge extends CordovaPlugin {
+public class QspBridge extends QspLib {
+/*
  public ArrayList itemsList = new ArrayList();
  public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
    try {
@@ -41,4 +45,5 @@ public class QspBridge extends CordovaPlugin {
      System.out.println("All good!");
    }
  }
+ */
 }

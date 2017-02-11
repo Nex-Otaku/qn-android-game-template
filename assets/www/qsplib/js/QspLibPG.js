@@ -26,10 +26,6 @@ var QspLib = {
     version: function(types, success, fail) {
         return QspBridge.version(types, success, fail);
     },
-    
-    selectAction: function(index) {
-        return QspBridge.selectAction(index);
-    },
 
     executeAction: function(index) {
         return QspBridge.executeAction(index);

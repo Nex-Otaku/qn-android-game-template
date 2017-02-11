@@ -50,9 +50,9 @@ body.cover #qsp-wrapper-main { max-height:480px; margin-top:auto; margin-bottom:
 #qsp-system-menu-button { position:absolute; left:0px; top:0px; }
 #qsp-system-menu-button img { float:left; }
 
-a, .qsp-skin-button, .qsp-action, .qsp-save-slot-enabled { -webkit-tap-highlight-color: rgba(0,0,0,0); cursor:pointer; }
+a, .qsp-button, .qsp-action, .qsp-save-slot-enabled { -webkit-tap-highlight-color: rgba(0,0,0,0); cursor:pointer; }
 
-.qsp-skin-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: #202020; opacity: .80;filter:Alpha(Opacity=80); -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.qsp-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: #202020; opacity: .80;filter:Alpha(Opacity=80); -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
 .qsp-skin-action-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
@@ -90,8 +90,8 @@ a, .qsp-skin-button, .qsp-action, .qsp-save-slot-enabled { -webkit-tap-highlight
 #qsp-dialog-system-menu-background, #qsp-dialog-system-menu-container { position: absolute;  left:50%; top:50%; width:205px; height:215px; margin-top:-107px; margin-left:-103px; }
 
 #qsp-dialog-system-menu-container { padding:0px; }
-#qsp-dialog-system-menu-container .qsp-skin-button { width:50%; height:50%; float:left; font-size:12px; }
-#qsp-dialog-system-menu-container .qsp-skin-button a { text-decoration:none; color:#000; line-height:100%; }
+#qsp-dialog-system-menu-container .qsp-button { width:50%; height:50%; float:left; font-size:12px; }
+#qsp-dialog-system-menu-container .qsp-button a { text-decoration:none; color:#000; line-height:100%; }
 .qsp-dialog-system-menu-top-row { padding-top:15px; }
 .qsp-dialog-system-menu-bottom-row { padding-top:0px; }
 .qsp-dialog-system-menu-left-column { width:90%; float:right; }
@@ -174,7 +174,8 @@ body:not(.cover) #qsp-main { padding-left:12px; padding-right:12px; text-align:j
 /* TWEAK FOR ACTS */
 #qsp-acts { padding-left:8px; padding-right:8px;  padding-top:25px; padding-bottom:8px; max-width:600px; }
 /* TWEAK FOR DEFAULT TEXT COLOR */
-body { color:#FFF; background-color:#000; font-size:30px; font-family:sans-serif; }
+/*body { color:#FFF; background-color:#000; font-size:30px; font-family:sans-serif; }*/
+body { color:#000; background-color:#5a5a5a; font-size:16px; font-family:sans-serif; }
 
 body * { font-family:sans-serif; }
 
@@ -221,7 +222,7 @@ body.retina #qsp-inv-background-center{
 
 .qsp-object { float:left; }
 
-.qsp-skin-button:not(.pressed) .np-action-outer {
+.qsp-button:not(.pressed) .np-action-outer {
 /* top right bottom left */
 border-style: solid;
 color:#00B3CE; 
@@ -328,7 +329,7 @@ body.retina #qsp-cover-wrapper {
 .border-emu{ position:absolute; z-index:-1; }
 
 /* Кнопка на первой странице - в IE почему-то показывается рамка */
-.qsp-skin-button img{ border:none; }
+.qsp-button img{ border:none; }
 
 /* Используется для борьбы с багом инвентаря на Андроиде */
 #qsp-android-refresh-bugfix { display:none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); }

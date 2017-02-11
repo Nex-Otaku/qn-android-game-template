@@ -261,9 +261,12 @@ function qspSetGroupedContent(content)
     if (!qspSplashHidden && (qspLibMode === "PHONEGAP"))
     {
 		qspSplashHidden = true;
-		setTimeout( function() {
-				   cordova.exec(null, null, "SplashScreen", "hide", []);
-				   }, 500);
+// TODO
+// Подключить SplashScreen
+// https://github.com/apache/cordova-plugin-splashscreen
+//		setTimeout( function() {
+//				   cordova.exec(null, null, "SplashScreen", "hide", []);
+//				   }, 500);
     }
 }
 

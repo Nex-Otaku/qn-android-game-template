@@ -21,6 +21,11 @@ function qspSkinOnInitApi() {
 	skinTopUser2 = parseInt($('#qsp-user2').css('top'), 10);
 
 	skinHideInvCaptions();
+
+	// TODO
+	// Убрать эту строку, подключить SplashScreen.
+    // https://github.com/apache/cordova-plugin-splashscreen
+	qspSplashHidden = true;
 }
 
 function qspSkinOnDeviceSet() {

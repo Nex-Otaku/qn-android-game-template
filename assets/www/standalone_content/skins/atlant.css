@@ -109,7 +109,7 @@ body.cover #qsp-dialog-view-image-container { display:none; }
  * высота и ширина самого диалога нам известны заранее, а размеры экрана могут быть любыми
  */
 #qsp-dialog-save-slots-wrapper1 { 
-position: absolute; left:50%; top:50%; width:205px; height:215px; margin-top:-107px; margin-left:-103px; overflow:hidden; 
+position: absolute; left:50%; top:50%; width:205px; height:215px; margin-top:-107px; margin-left:-103px; overflow:hidden;
 background-image:url("gfx/system_menu_back-205x215.png");
 background-size:205px 215px;
 -webkit-background-size:205px 215px;
@@ -139,6 +139,7 @@ body.retina #qsp-dialog-save-slots-wrapper1 {
 	width:auto;
 	margin:0px;
 	padding:0px;
+	white-space: nowrap;
 }
 
 .qsp-save-slot-enabled, .qsp-save-slot-disabled { float:left; clear:both; margin-top:14px; font-size:17px; width:100%; padding:0px; }

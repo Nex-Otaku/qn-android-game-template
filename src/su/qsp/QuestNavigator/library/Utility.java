@@ -1,4 +1,4 @@
-package ru.butterfly_lantern.cordova;
+package su.qsp.QuestNavigator.library;
 
 import java.io.File;
 import java.io.FileInputStream;

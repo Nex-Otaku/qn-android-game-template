@@ -1,4 +1,4 @@
-package ru.butterfly_lantern.cordova;
+package su.qsp.QuestNavigator.library;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,6 +29,8 @@ import android.content.res.AssetManager;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Looper;
+
+import su.qsp.QuestNavigator.library.Utility;
 
 public class QspLib extends CordovaPlugin {
 	

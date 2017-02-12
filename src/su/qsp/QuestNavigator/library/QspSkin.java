@@ -1,4 +1,4 @@
-package ru.butterfly_lantern.cordova;
+package su.qsp.QuestNavigator.library;
 
 import org.json.JSONException;
 import org.json.JSONObject;

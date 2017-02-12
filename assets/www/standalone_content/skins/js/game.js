@@ -22,11 +22,6 @@ function qspSkinOnInitApi() {
 
 	skinHideInvCaptions();
 
-	// TODO
-	// Убрать эту строку, подключить SplashScreen.
-    // https://github.com/apache/cordova-plugin-splashscreen
-	qspSplashHidden = true;
-
 	qspActsListItemFormat = "<div class='np-action-outer'><div class='np-action-inner'>%TEXT%</div></div>";
     qspObjsListItemFormat = "<img src='%IMAGE%-39x38.png'>";
     qspObjsListSelItemFormat = "<img src='%IMAGE%_active-39x38.png'>";

@@ -30,4 +30,8 @@
     <feature name="QspBridge">
         <param name="android-package" value="ru.butterfly_lantern.cordova.QspBridge" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

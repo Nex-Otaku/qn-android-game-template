@@ -28,6 +28,14 @@ module.exports = [
         "clobbers": [
             "QspBridge"
         ]
+    },
+    {
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -36,7 +44,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-x-toast": "2.5.2",
-    "cordova-plugin-qsp": "1.0.0"
+    "cordova-plugin-qsp": "1.0.0",
+    "cordova-plugin-splashscreen": "4.0.1"
 };
 // BOTTOM OF METADATA
 });

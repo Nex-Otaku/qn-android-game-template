@@ -18,6 +18,9 @@
         },
         "cordova-plugin-qsp": {
             "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ru.butterfly_lantern.game_demo"
         }
     },
     "dependent_plugins": {}

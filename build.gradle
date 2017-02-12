@@ -247,10 +247,6 @@ android {
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     // SUB-PROJECT DEPENDENCIES START
-    // Дерево зависимостей для модулей:
-    // GameProject < QuestNavigatorLibrary < CordovaLib
-//    debugCompile project(path: 'CordovaLib', configuration: 'debug')
-//    releaseCompile project(path: 'CordovaLib', configuration: 'release')
     // SUB-PROJECT DEPENDENCIES END
     compile project(':QuestNavigatorLibrary')
 }

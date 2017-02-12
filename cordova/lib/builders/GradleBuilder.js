@@ -96,11 +96,20 @@ GradleBuilder.prototype.prepBuildFiles = function() {
             str+='project(":'+libName+'").projectDir = new File("'+p+'")\n';
         return str;
     });
-
+    
     // Write the settings.gradle file.
     fs.writeFileSync(path.join(this.root, 'settings.gradle'),
         '// GENERATED FILE - DO NOT EDIT\n' +
-        'include ":"\n' + settingsGradlePaths.join(''));
+        'include ":"\n' + settingsGradlePaths.join('') +
+
+// !!!!        
+        'include \':QuestNavigatorLibrary\'\n' +
+        'project(\':QuestNavigatorLibrary\').projectDir=new File(\'d:/dev/repos/quest-navigator-library-android-studio/QuestNavigatorLibrary\')'
+// !!!!        
+        
+        );
+        
+
     // Update dependencies within build.gradle.
     var buildGradle = fs.readFileSync(path.join(this.root, 'build.gradle'), 'utf8');
     var depsList = '';
@@ -115,6 +124,7 @@ GradleBuilder.prototype.prepBuildFiles = function() {
             depsList +='\n';
           }
     };
+    /*
     subProjects.forEach(function(p) {
         console.log('Subproject Path: ' + p);
         var libName=p.replace(/[/\\]/g, ':').replace(name+'-','');
@@ -123,6 +133,7 @@ GradleBuilder.prototype.prepBuildFiles = function() {
         depsList += '    releaseCompile(project(path: "' + libName + '", configuration: "release"))';
         insertExclude(p);
     });
+    */
     // For why we do this mapping: https://issues.apache.org/jira/browse/CB-8390
     var SYSTEM_LIBRARY_MAPPINGS = [
         [/^\/?extras\/android\/support\/(.*)$/, 'com.android.support:support-$1:+'],

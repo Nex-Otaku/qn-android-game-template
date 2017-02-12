@@ -1,4 +1,4 @@
-package su.qsp.QuestNavigator.library;
+package ru.butterfly_lantern.cordova;
 
 import android.media.MediaPlayer;
 

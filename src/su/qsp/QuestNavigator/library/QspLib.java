@@ -30,8 +30,6 @@ import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Looper;
 
-import su.qsp.QuestNavigator.library.Utility;
-
 public class QspLib extends CordovaPlugin {
 	
 	protected Map<String, String> jsCallBacks = null;

@@ -14,3 +14,4 @@ out
 /build
 /.gradle/
 *.iml
+/.idea/
